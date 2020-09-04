@@ -28,6 +28,21 @@ void Window::checkClose()
 	}
 }
 
+void Window::preDraw()
+{
+	m_window.clear(sf::Color::White);
+}
+
+void Window::draw(const sf::Drawable &drawable)
+{
+	m_window.draw(drawable);
+}
+
+void Window::displayBufferContents()
+{
+	m_window.display();
+}
+
 bool Window::isOpen()
 {
 	// use sf::Window bool to pass to game class

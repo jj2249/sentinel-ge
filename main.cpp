@@ -9,6 +9,7 @@ int main()
 	while (game.isRunning())
 	{
 		game.update();
+		game.draw();
 	}
 
     return 0;
