@@ -2,13 +2,12 @@
 
 int main()
 {
-	//instantiate game object
-
+	// instantiate game object
 	Game game;
 
+	// game loop
 	while (game.isRunning())
 	{
-		game.calcDeltaT();
 		game.update();
 		game.draw();
 	}

@@ -2,6 +2,7 @@
 #define window_hpp
 
 #include <SFML/Graphics.hpp>
+#include <string>
 
 class Window
 {
