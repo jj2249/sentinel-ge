@@ -8,6 +8,7 @@ int main()
 
 	while (game.isRunning())
 	{
+		game.calcDeltaT();
 		game.update();
 		game.draw();
 	}
