@@ -1,8 +1,8 @@
 CXX = g++
 CFLAGS = -std=c++17
 
-program: main.o game.o window.o resourcePath.o input.o
-	$(CXX) $(CFLAGS) -o program *.o -lsfml-graphics -lsfml-window -lsfml-system
+sge: main.o game.o window.o resourcePath.o input.o
+	$(CXX) $(CFLAGS) -o sge *.o -lsfml-graphics -lsfml-window -lsfml-system
 
 main.o: main.cpp
 	$(CXX) $(CFLAGS) -c main.cpp
@@ -20,4 +20,4 @@ input.o: input.cpp
 	$(CXX) $(CFLAGS) -c input.cpp
 
 clean:
-	rm program *.o
+	rm sge *.o
